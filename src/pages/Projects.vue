@@ -1,7 +1,7 @@
 <script >
 import axios from 'axios';
 import { store } from '../store.js';
-import Project from './Project.vue';
+import Project from '../components/Project.vue';
 
 export default {
     components: {
@@ -43,7 +43,7 @@ export default {
     <div class="container">
         <div class="row">
 
-            <Project v-for="project in projects" :key="index" :project="project" />
+            <Project v-for="project in projects" :project="project" />
 
             <div class="col-12">
                 <div class="page_button_container">

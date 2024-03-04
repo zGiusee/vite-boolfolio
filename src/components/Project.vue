@@ -43,6 +43,7 @@ export default {
             <div class="card-body">
                 <h5 class="card-title">{{ project.name }}</h5>
                 <p class="card-text">{{ project.description }}</p>
+                <p class="card-text">{{ project.type ? project.type.name : 'Nessuna tipologia specificata' }} </p>
                 <a href="#" class="btn btn-primary">Vai al dettaglio</a>
             </div>
         </div>
