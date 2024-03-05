@@ -4,6 +4,7 @@ import AppHome from './pages/AppHome.vue';
 import Projects from './pages/Projects.vue';
 import AppNotFound from './pages/AppNotFound.vue';
 import DetailProject from './pages/DetailProject.vue';
+import ProjectsType from './pages/ProjectsType.vue'
 
 const router = createRouter({
 
@@ -28,6 +29,11 @@ const router = createRouter({
             path: '/projects/:slug',
             name: 'detail_project',
             component: DetailProject
+        },
+        {
+            path: '/projects/type/:slug',
+            name: 'projects_type',
+            component: ProjectsType
         }
     ]
 });
