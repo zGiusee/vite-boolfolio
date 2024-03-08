@@ -1,4 +1,4 @@
-<script >
+<script>
 export default {
     data() {
         return {
@@ -10,6 +10,10 @@ export default {
                 {
                     name: 'projects',
                     label: 'Projects',
+                },
+                {
+                    name: 'contact',
+                    label: 'Mail us!',
                 },
             ],
 
@@ -25,22 +29,22 @@ export default {
 </script>
 
 <template>
-  <header>
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-6">
-                <h1>BoolFolio</h1>
-            </div>
-            <div class="col-6 d-flex align-items-center">
-                <ul class="list-unstyled d-flex mb-0">
-                    <li class=" mx-2" v-for="link, index in navLinks">
-                        <router-link :to="{ name: link.name }">{{ link.label }}</router-link>
-                    </li>
-                </ul>
+    <header>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-6">
+                    <h1>BoolFolio</h1>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class=" mx-2" v-for="link, index in navLinks">
+                            <router-link :to="{ name: link.name }">{{ link.label }}</router-link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-  </header>
+    </header>
 </template>
 
 <style scoped lang="scss">
